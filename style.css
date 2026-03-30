@@ -9,7 +9,6 @@ https://templatemo.com/tm-596-electric-xtra
 @charset "utf-8";
 
 /* CSS Document */
-
 * {
             margin: 0;
             padding: 0;
@@ -922,16 +921,25 @@ https://templatemo.com/tm-596-electric-xtra
             margin-top: 40px;
             background: rgba(255, 255, 255, 0.03);
             border: 1px solid rgba(255, 94, 0, 0.2);
-            border-radius: 10px;
+            border-radius: 20px;
             padding: 20px;
             backdrop-filter: blur(10px);
             height: 300px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
             position: relative;
             overflow: hidden;
         }
+
+        .map-container iframe {
+           position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+
+    border: none;
+    border-radius: 20px;
+    z-index: 1;
+}
 
         .map-placeholder {
             text-align: center;
@@ -946,6 +954,8 @@ https://templatemo.com/tm-596-electric-xtra
             height: 100%;
             background: linear-gradient(45deg, transparent 40%, rgba(255, 94, 0, 0.1) 50%, transparent 60%);
             animation: scan 3s linear infinite;
+            z-index: 2;
+            pointer-events: none;
         }
 
         @keyframes scan {
