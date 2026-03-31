@@ -1,14 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CyberCell</title>
-    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Rajdhani:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Rajdhani:wght@300;400;500;700&display=swap"
+        rel="stylesheet">
     <link href="style.css" rel="stylesheet">
 
+
 </head>
+
 <body>
+    <!-- Scroll progress-->
+    <div id="scroll-progress"></div>
+
     <!-- Animated Grid Background -->
     <div class="grid-bg"></div>
     <div class="gradient-overlay"></div>
@@ -35,9 +43,10 @@
                             <stop offset="100%" style="stop-color:#00B2FF;stop-opacity:1" />
                         </linearGradient>
                     </defs>
-                    <polygon points="20,2 38,14 38,26 20,38 2,26 2,14" fill="none" stroke="url(#logoGradient)" stroke-width="2"/>
-                    <polygon points="20,8 32,16 32,24 20,32 8,24 8,16" fill="url(#logoGradient)" opacity="0.3"/>
-                    <circle cx="20" cy="20" r="3" fill="url(#logoGradient)"/>
+                    <polygon points="20,2 38,14 38,26 20,38 2,26 2,14" fill="none" stroke="url(#logoGradient)"
+                        stroke-width="2" />
+                    <polygon points="20,8 32,16 32,24 20,32 8,24 8,16" fill="url(#logoGradient)" opacity="0.3" />
+                    <circle cx="20" cy="20" r="3" fill="url(#logoGradient)" />
                 </svg>
                 <span class="logo-text">CyberCell</span>
             </a>
@@ -74,111 +83,87 @@
             </div>
         </div>
         <div class="cta-container">
-            <a href="#features" class="cta-button cta-primary">Get Started</a>
+            <a href="#member" class="cta-button cta-primary">Meet Our Team</a>
             <a href="#about" class="cta-button cta-secondary">Learn More</a>
         </div>
     </section>
 
-    <!-- Features Section with Tabs -->
-    <section class="features" id="features">
-        <h2 class="section-title">Core Features</h2>
-        <div class="features-container">
-            <div class="feature-tabs">
-                <div class="tab-item active" data-tab="performance">
-                    <span class="tab-icon">⚡</span>
-                    <span>Performance</span>
+    <!-- Member Section -->
+    <section class="members-section" id="member">
+        <h2 class="section-title">Members</h2>
+
+        <div class="members-grid">
+
+            <div class="member-card">
+                <div class="img-box">
+                    <img src="/assets/founder.jpg" alt="">
                 </div>
-                <div class="tab-item" data-tab="security">
-                    <span class="tab-icon">🔒</span>
-                    <span>Security</span>
-                </div>
-                <div class="tab-item" data-tab="network">
-                    <span class="tab-icon">🌐</span>
-                    <span>Network</span>
-                </div>
-                <div class="tab-item" data-tab="analytics">
-                    <span class="tab-icon">📊</span>
-                    <span>Analytics</span>
-                </div>
-                <div class="tab-item" data-tab="integration">
-                    <span class="tab-icon">🔧</span>
-                    <span>Integration</span>
-                </div>
+                <h3>Hrithik Kumar</h3>
+                <p class="role">Founder</p>
             </div>
-            <div class="feature-content">
-                <div class="content-panel active" id="performance">
-                    <h3>Lightning Fast Performance</h3>
-                    <p>Experience unprecedented speed with our quantum-powered infrastructure. Built on cutting-edge technology that delivers results at the speed of thought. Electric Xtra CSS template is brought to you by TemplateMo website.</p>
-                    <ul class="feature-list">
-                        <li>Sub-millisecond response times</li>
-                        <li>99.99% uptime guarantee</li>
-                        <li>Automatic scaling based on demand</li>
-                        <li>Real-time data synchronization</li>
-                    </ul>
+
+            <div class="member-card">
+                <div class="img-box">
+                    <img src="/assets/co-founder.jpg" alt="">
                 </div>
-                <div class="content-panel" id="security">
-                    <h3>Military-Grade Security</h3>
-                    <p>Your data is protected by the most advanced encryption protocols available. Multi-layered security ensures complete protection against cyber threats. You may tell your friends about TemplateMo free css website and how easy it is.</p>
-                    <ul class="feature-list">
-                        <li>256-bit AES encryption</li>
-                        <li>Biometric authentication</li>
-                        <li>Zero-knowledge architecture</li>
-                        <li>Real-time threat detection</li>
-                        <li>Automated security updates</li>
-                    </ul>
-                </div>
-                <div class="content-panel" id="network">
-                    <h3>Global Neural Network</h3>
-                    <p>Connect to our worldwide infrastructure that spans across continents. Seamless integration with existing systems and future-proof architecture.</p>
-                    <ul class="feature-list">
-                        <li>200+ global data centers</li>
-                        <li>Intelligent routing algorithms</li>
-                        <li>Cross-platform compatibility</li>
-                        <li>5G and satellite connectivity</li>
-                        <li>Decentralized architecture</li>
-                    </ul>
-                </div>
-                <div class="content-panel" id="analytics">
-                    <h3>Advanced Analytics</h3>
-                    <p>Harness the power of AI-driven insights to make data-driven decisions. Real-time analytics and predictive modeling at your fingertips.</p>
-                    <ul class="feature-list">
-                        <li>Machine learning algorithms</li>
-                        <li>Predictive analytics</li>
-                        <li>Custom dashboard creation</li>
-                        <li>Real-time data visualization</li>
-                        <li>Automated reporting</li>
-                    </ul>
-                </div>
-                <div class="content-panel" id="integration">
-                    <h3>Seamless Integration</h3>
-                    <p>Connect with thousands of apps and services through our universal API. Built to work with your existing tools and workflows.</p>
-                    <ul class="feature-list">
-                        <li>RESTful API architecture</li>
-                        <li>WebSocket support</li>
-                        <li>SDK for major platforms</li>
-                        <li>One-click integrations</li>
-                        <li>Custom webhook support</li>
-                    </ul>
-                </div>
+                <h3>Vatsal Vinit Kumar</h3>
+                <p class="role">Co-Founder</p>
             </div>
+
+            <div class="member-card">
+                <div class="img-box">
+                    <img src="/assets/president.png" alt="">
+                </div>
+                <h3>S.K. Abdul Rahim</h3>
+                <p class="role">President <br><span>HOD - CSE</span></p>
+            </div>
+
+            <div class="member-card">
+                <div class="img-box">
+                    <img src="/assets/vice_president.jpg" alt="">
+                </div>
+                <h3>Dr. Santanu Modak</h3>
+                <p class="role">Vice President <br><span>HOD - IT</span></p>
+            </div>
+
+            <div class="member-card">
+                <div class="img-box">
+                    <img src="/assets/co-ordinator.jpg" alt="">
+                </div>
+                <h3>Swarup Kumar Hazra Choudhary</h3>
+                <p class="role">Coordinator <br><span>HOD - AI/ML</span></p>
+            </div>
+
         </div>
     </section>
-
     <!-- About Section -->
+
     <section class="about" id="about">
-        <h2 class="section-title">About Electric Xtra</h2>
+        <h2 class="section-title">About Cybercell</h2>
+
         <div class="about-content">
             <div class="about-text">
                 <h2>Pioneering the Digital Frontier</h2>
-                <p>At ELECTRIC XTRA, we're not just building technology – we're crafting the future. Our mission is to bridge the gap between human potential and digital innovation, creating solutions that empower individuals and transform industries.</p>
-                <p>Founded by visionaries who saw beyond the limitations of current technology, ELECTRIC XTRA represents a quantum leap in digital infrastructure. We combine cutting-edge research with practical applications to deliver solutions that are both revolutionary and reliable.</p>
-                <p>Join us as we redefine what's possible in the digital age. The future isn't something that happens to us – it's something we create together.</p>
+                <p>
+                    At CYBERCELL, we focus on building strong technical skills and innovation among students.
+                    We organize events, workshops, and competitions to help students grow in cybersecurity,
+                    development, and modern technologies.
+                </p>
+                <!-- <p>
+                    Our mission is to create a vibrant community of cybersecurity enthusiasts who are passionate about
+                    protecting digital assets and building secure systems for the future.
+                </p> -->
             </div>
+
             <div class="about-visual">
-                <div class="about-graphic"></div>
+                <div class="about-graphic">
+    <img src="assets/cybercell_bcet_logo.jpg" class="about-logo" alt="CyberCell Logo">
+</div>
             </div>
         </div>
-        
+
+
+
         <!-- Second row with reversed layout -->
         <div class="about-content" style="margin-top: 80px;">
             <div class="about-visual">
@@ -189,10 +174,13 @@
                 </div>
             </div>
             <div class="about-text">
-                <h2>Innovation at Every Level</h2>
-                <p>Our commitment to excellence drives us to push boundaries and challenge conventions. With a team of world-class engineers, designers, and visionaries, we're creating solutions that not only meet today's needs but anticipate tomorrow's challenges.</p>
-                <p>From quantum computing to neural networks, from blockchain to AI, we're at the forefront of every technological revolution. Our integrated approach ensures that each innovation builds upon the last, creating a synergy that amplifies our impact.</p>
-                <p>Experience the power of true digital transformation. With ELECTRIC XTRA, you're not just adopting technology – you're embracing a philosophy of continuous evolution and limitless possibility.</p>
+                <h2>OUR MISSION</h2>
+                <p>To create a vibrant community of cybersecurity enthusiasts who are passionate about protecting
+                    digital assets and building secure systems for the future.</p>
+                <h2>OUR VISION</h2>
+                <p>To be the leading technical club that shapes the next generation of cybersecurity professionals
+                    through hands-on experience and cutting-edge research.</p>
+
             </div>
         </div>
     </section>
@@ -243,17 +231,22 @@
                     <div class="info-details">
                         <h4>Location</h4>
                         <p>Bengal College of Engineering and Technology
-Bidhannagar , Durgapur , West Bengal 713212</p>
+                            Bidhannagar , Durgapur , West Bengal 713212</p>
                     </div>
                 </div>
 
                 <div class="map-container">
-                    <div class="map-placeholder">    
+                    <div class="map-placeholder">
                         <p>Interactive Map</p>
-                        <p style="font-size: 0.9rem; margin-top: 10px;">Bengal College of Engineering and Technology <br> Bidhannagar , Durgapur , West Bengal 713212</p>
-                        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d524.813415125792!2d87.34118451882811!3d23.52129081535067!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sin!4v1774841495840!5m2!1sen!2sin"  style="border:0;" allowfullscreen="" loading="lazy" "></iframe>
+                        <p style="font-size: 0.9rem; margin-top: 10px;">Bengal College of Engineering and Technology
+                            <br> Bidhannagar , Durgapur , West Bengal 713212
+                        </p>
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d524.813415125792!2d87.34118451882811!3d23.52129081535067!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sin!4v1774841495840!5m2!1sen!2sin"
+                            style="border:0;" allowfullscreen="" loading="lazy" "></iframe>
                     </div>
-                    <div class="map-overlay"></div>
+                    <div class=" map-overlay">
+                    </div>
                 </div>
             </div>
         </div>
@@ -271,6 +264,7 @@ Bidhannagar , Durgapur , West Bengal 713212</p>
             <p class="copyright">We make people who secure our future</p>
         </div>
     </footer>
-<script src="scripts.js"></script>
+    <script src="scripts.js"></script>
 </body>
+
 </html>
