@@ -230,3 +230,4 @@ const observer = new IntersectionObserver((entries) => {
 });
 
 eventCards.forEach(card => observer.observe(card));
+

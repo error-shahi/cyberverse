@@ -1572,3 +1572,29 @@ footer {
         height: 200px;
     }
 }
+.inner-logo {
+    position: absolute;
+
+    width: 100px;
+    height: 100px;
+
+    object-fit: cover;
+
+    /* 🔥 Make it perfect circle */
+    border-radius: 50%;
+
+    /* Center it */
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    z-index: 5;
+
+    /* Clean border + glow */
+    border: 2px solid rgba(255,255,255,0.2);
+    box-shadow:
+        0 0 15px rgba(0,178,255,0.6),
+        0 0 30px rgba(255,94,0,0.4);
+
+    transition: all 0.4s ease;
+}
