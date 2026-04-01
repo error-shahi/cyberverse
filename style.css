@@ -1392,13 +1392,13 @@ footer {
 
 /* Neon Hover Effect */
 .social-icons a:hover {
-    color: #FF5E00;
+    color: #fafafb;
     transform: scale(1.25);
     text-shadow: 
-        0 0 5px #FF5E00,
-        0 0 10px #FF5E00,
-        0 0 20px #FF5E00,
-        0 0 40px rgba(255,94,0,0.6);
+        0 0 5px #0062ff,
+        0 0 10px #a2701a,
+        0 0 20px #d5c3b8,
+        0 0 40px rgba(231, 217, 62, 0.6);
 }
 
 /* Subtle Pulse Glow Ring */
@@ -1408,7 +1408,7 @@ footer {
     inset: -6px;
     border-radius: 50%;
     opacity: 0;
-    box-shadow: 0 0 15px #FF5E00;
+    box-shadow: 0 0 15px #0facb8;
     transition: 0.3s ease;
 }
 
