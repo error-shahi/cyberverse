@@ -730,11 +730,8 @@ nav.scrolled {
 }
 
 /* Hover */
-.member-card:hover {
-    transform: translateY(-15px) scale(1.05);
-}
-
 .member-card:hover .img-box {
+    transform: translate(-15px) scale(1.08);
     border-color: #00B2FF;
     box-shadow: 0 0 25px #00B2FF, 0 0 50px rgba(0,178,255,0.3);
 }
