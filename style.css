@@ -84,7 +84,7 @@ body {
     border-right: 100px solid transparent;
     border-bottom: 173px solid rgba(0, 178, 255, 0.2);
     top: 20%;
-    left: 15%;
+    right: 15%;
     animation: float-rotate 25s ease-in-out infinite reverse;
 }
 
@@ -94,7 +94,7 @@ body {
     border: 2px solid #00B2FF;
     transform: rotate(45deg);
     top: 20%;
-    right: 15%;
+    left: 15%;
     animation: float-rotate 22s ease-in-out infinite;
 }
 
